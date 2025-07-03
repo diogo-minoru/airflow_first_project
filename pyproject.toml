@@ -5,5 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.10.0"
 dependencies = [
+    "apache-airflow>=3.0.2",
+    "apache-airflow-providers-dbt-cloud>=4.4.0",
     "faker>=37.4.0",
 ]
