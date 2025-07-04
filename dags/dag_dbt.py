@@ -15,7 +15,7 @@ JOB_ID = "70471823480926"
 
 def run_dbt_cloud():
     rodar_dbt = DbtCloudRunJobOperator(
-        job_name="dbt",
+        task_id="dbt",
         dbt_cloud_conn_id=DBT_CLOUD_CONN_ID,
         job_id=JOB_ID,
         check_interval=60,
@@ -23,5 +23,5 @@ def run_dbt_cloud():
     )
     
     rodar_dbt
-    
+
 run_dbt_cloud()
